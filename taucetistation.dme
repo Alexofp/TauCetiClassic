@@ -1219,6 +1219,8 @@
 #include "code\modules\food\recipes_oven.dm"
 #include "code\modules\genetics\side_effects.dm"
 #include "code\modules\goonchat\browserOutput.dm"
+#include "code\modules\holidays\first_april\zoo_hair.dm"
+#include "code\modules\holidays\first_april\zoopark.dm"
 #include "code\modules\holidays\new_year\clothing.dm"
 #include "code\modules\holidays\new_year\decorations.dm"
 #include "code\modules\holidays\new_year\new_year_mate.dm"

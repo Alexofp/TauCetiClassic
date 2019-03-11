@@ -249,6 +249,7 @@
 							alert(user, "You cannot change your species as you need to be whitelisted. If you wish to be whitelisted contact an admin in-game, on the forums, or on IRC.")
 					else //Not using the whitelist? Aliens for everyone!
 						new_species = whitelisted_species
+					new_species += first_april_species // its first april, let everyone use them
 
 					species = input("Please select a species", "Character Generation", null) in new_species
 
@@ -278,7 +279,7 @@
 						b_type = new_b_type
 
 				if("hair")
-					if(species in list(HUMAN, UNATHI, TAJARAN, SKRELL, IPC))
+					if(species in list(HUMAN, UNATHI, TAJARAN, SKRELL, IPC, VULPKANIN))
 						var/new_hair = input(user, "Choose your character's hair colour:", "Character Preference") as color|null
 						if(new_hair)
 							r_hair = hex2num(copytext(new_hair, 2, 4))
@@ -367,7 +368,7 @@
 						s_tone = 35 - max(min( round(new_s_tone), 220),1)
 
 				if("skin")
-					if(species == UNATHI || species == TAJARAN || species == SKRELL)
+					if(species == UNATHI || species == TAJARAN || species == SKRELL || species in first_april_species_hasskincolor)
 						var/new_skin = input(user, "Choose your character's skin colour: ", "Character Preference") as color|null
 						if(new_skin)
 							r_skin = hex2num(copytext(new_skin, 2, 4))

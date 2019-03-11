@@ -151,7 +151,7 @@ commented cause polls are kinda broken now, needs refactoring */
 			to_chat(usr, "\red The round is either not ready, or has already finished...")
 			return
 
-		if(client.prefs.species != HUMAN)
+		if(client.prefs.species != HUMAN && !(client.prefs.species in first_april_species))
 			if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
 				to_chat(src, alert("You are currently not whitelisted to play [client.prefs.species]."))
 				return FALSE
@@ -167,7 +167,7 @@ commented cause polls are kinda broken now, needs refactoring */
 			to_chat(usr, "\blue There is an administrative lock on entering the game!")
 			return
 
-		if(client.prefs.species != HUMAN)
+		if(client.prefs.species != HUMAN && !(client.prefs.species in first_april_species))
 			if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
 				to_chat(src, alert("You are currently not whitelisted to play [client.prefs.species]."))
 				return FALSE
