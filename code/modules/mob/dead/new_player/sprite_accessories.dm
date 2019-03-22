@@ -27,7 +27,7 @@
 	var/gender = NEUTER
 
 	// Restrict some styles to specific species
-	var/list/species_allowed = list(HUMAN)
+	var/list/species_allowed = list(HUMAN, RAPALA, VASILISSAN)
 
 	// Whether or not the accessory can be affected by colouration
 	var/do_colouration = 1

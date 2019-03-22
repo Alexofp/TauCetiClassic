@@ -78,6 +78,10 @@
 #define SLIME          "Slime"
 #define VULPKANIN	   "Vulpkanin"
 #define AKULA	       "Akula"
+#define ZORREN         "Zorren"
+#define RAPALA         "Rapala"
+#define SERGAL         "Sergal"
+#define VASILISSAN     "Vasilissan"
 
 #define HUMAN_STRIP_DELAY 40 //takes 40ds = 4s to strip someone.
 
